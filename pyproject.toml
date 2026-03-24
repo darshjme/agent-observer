@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agent-observer"
+version = "1.0.0"
+description = "Observer pattern for reactive agent systems"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = []
+
+authors = [
+  { name = "Darshankumar Joshi", email = "darshjme@gmail.com" },
+]
+
+keywords = ["observer", "reactive", "agent", "events", "pubsub"]
+
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Homepage = "https://github.com/darshjme-codes/agent-observer"
+Repository = "https://github.com/darshjme-codes/agent-observer"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/agent_observer"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
